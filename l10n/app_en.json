@@ -1,0 +1,77 @@
+{
+    "TopBar": {
+        "Home": "Home",
+        "Feature": "Features",
+        "Video": "Video",
+        "ReleaseNotes": "Changelog",
+        "Downloads": "Download",
+        "Buy": "Buy",
+        "Documents": "Documentation",
+        "ReportIssue": "Issues",
+        "Languages": "Languages"
+    },
+    "Footer": {},
+    "HomePage": {
+        "ProjectTagline": "For batch operation with exif information pictures, which is an ideal product for you.",
+        "BtnDownload": "Free Trial",
+        "BtnBuy": "Buy",
+        "Screens": [
+            "{{images/screens/common/c1.jpg}}",
+            "{{images/screens/common/c2.jpg}}",
+            "{{images/screens/common/c3.jpg}}"
+        ],
+        "Features": {
+            "SectionName": "Main Features",
+            "list": [
+                "support Recursive subdirectories",
+                "support Include hidden files",
+                "support set the Starting sequence number (default: 1)",
+                "support Delete the source image",
+                "support Overwrite existing files."
+            ]
+        },
+        "UserReviews": {
+            "SectionName": "Wonderful things people are saying about ExifImage",
+            "list": [
+
+            ]
+        }
+    },
+    "FeaturePage": {},
+    "DocumentsPage": {
+        "list": [
+
+        ]
+    },
+    "VersionPage": {
+        "labelVersion": "Version",
+        "list": [
+            {
+                "version": "{{1.15.0422}}",
+                "zipList": [
+                    {
+                        "osUrl": "{{images/download/osx.png}}",
+                        "name": "{{ExifImage-v1.15.0422-darwin-x64.zip}}",
+                        "size": "{{13.3MB}}",
+                        "downURL": "{{https://itunes.apple.com/us/app/exifimage-smart-image-renamer/id959303626?l=zh&ls=1&mt=12}}"
+                    }
+                ]
+            }
+        ]
+    },
+    "BuyPage": {
+        "SectionName": "Buy",
+        "list": [          
+            {
+                "name": "{{ExifImage for Mac App Store}}",
+                "logo": "{{images/buy/mas.png}}",
+                "buyURL": "{{https://itunes.apple.com/us/app/exifimage-smart-image-renamer/id959303626?l=zh&ls=1&mt=12}}"
+            }
+        ]
+    },
+    "RoadMapPage": {},
+    "LanguagesPage": {
+        "SectionName": "Available language(MT)",
+        "ChangeAlert": "Switching language to complete"
+    }
+}

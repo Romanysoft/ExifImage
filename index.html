@@ -2,178 +2,139 @@
 <html lang="en-US">
 
 <head>
-  <meta charset="UTF-8">
-  <title>ExifImage by Romanysoft</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="stylesheets/app.css" media="screen">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/app.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/slicebox.css" media="screen">
 
-  <!-- Favicons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/logo_144.png">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/logo_114.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/logo_72.png">
-  <link rel="apple-touch-icon-precomposed" href="images/ico/logo_57.png">
-  <link rel="shortcut icon" href="images/ico/logo_64.png">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/logo_144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/logo_114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/logo_72.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/logo_57.png">
+    <link rel="shortcut icon" href="images/ico/logo_64.png">
 
+    
+    <script src="js/common/modernizr.custom.46884.js"></script>
+    <script src="js/common/jquery-1.12.3.min.js"></script>
+    <script src="js/common/artTemplate/3.0/template.js"></script>
+    <script src="js/common/jquery.slicebox.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/google-analytics.js"></script>
 </head>
 
 <body>
-  <section class="page-header">
-    <a href="https://github.com/Romanysoft/ExifImage/issues" target="_blank" class="btn">FAQ / Feedback</a>
-    <h1 class="project-name">ExifImage</h1>
-    <h2 class="project-tagline">Smart Image Renamer. For MacOS x 10.7.5 or later.</h2>
-
-<!--    <a href="./index_ja_JP.html" target="_blank" class="btn">日本語</a>-->
-<!--    <a href="./index_de_DE.html" target="_blank" class="btn">Deutsch</a>-->
-<!--    <a href="./index_zh_CN.html" target="_blank" class="btn">中文简体</a>-->
-<!--    <a href="./index_zh_TW.html" target="_blank" class="btn">中文繁體</a>-->
-  </section>
-
-  <section class="main-content">
-    <div class="app-screens">
-      <img src="images/screens/en_US/1.png">
-      <img src="images/screens/en_US/2.png">
-      <img src="images/screens/en_US/3.png">
-
-    </div>
-    <div class="app-downloads">
-      <!--MacOSX Download-->
-      <a class="btn btn-download" href="http://hotdownloads.com/trialware/download/Download_ExifImage.zip?item=55399-3" target="_blank"> <span class="large">Download</span>
-        <br>
-        <span class="small">Free | MacOS x 10.7.5 or later.</span> </a>
-      <!--MacOSX Buy-->
-      <a class="btn btn-download" href="https://shopper.mycommerce.com/checkout/cart/add/55399-20" target="_blank"> <span class="large">Buy</span>
-        <br>
-        <span class="small">$15.99 | MacOS x 10.7.5 or later.</span> </a>
-
-      <!--MacOSX AppStore Download-->
-<!--
-      <a class="btn btn-store-buy" href="https://itunes.apple.com/us/app/ExifImage/id954164365?l=zh&ls=1&mt=12" target="_blank"> <span class="large">Apple app store </span>
-        <br>
-        <span class="small">$39.99 | MacOS x 10.7.5 or later.</span> </a>
--->
-    </div>
-
-
-    <div>
-      <div>
-        <textarea readonly="readonly" style="margin: 0px; width: 860px; height: 600px; background-attachment: fixed; background-repeat: no-repeat; border-style: solid; 
-border-color: #FFFFFF;">
-Format string for the file name is defined by a mix of custom text and following tags enclosed in {}:
-  YYYY        Year
-  MM            Month
-  DD             Day
-  hh              Hours
-  mm            Minutes
-  ss              Seconds
-  Seq           Sequence number
-  Artist          Artist
-  Make        Camera Make
-  Model       Camera Model
-  Folder       Parent folder of the image file
-
-Examples:
-  Format String:          {YYYY}-{MM}-{DD}-{Folder}-{Seq}
-  File Name:                 2014-05-09-Wedding_Shoot-001.JPEG
-                                    2014-05-09-Wedding_Shoot-002.JPEG
-
-  Format String:          {YYYY}{DD}{MM}_{Model}_Beach_Shoot_{Seq}
-  File Name:                20140429_PENTAX K-x_Beach_Shoot_001.JPEG
-                                   20140429_PENTAX K-x_Beach_Shoot_002.JPEG
-        </textarea>
-      </div>
-    </div>
-<h3>  
-<a id="app-features" class="anchor" href="#app-features" aria-hidden="true"><span class="octicon octicon-link"></span></a>ExifImage Features</h3>
-    <div>
-      <ul>
-        <li>support logs</li>
-        <li>support Recursive subdirectories</li>
-        <li>support Include hidden files</li>
-        <li>support set the Starting sequence number (default: 1)</li>
-        <li>support Delete the source image</li>     
-        <li>support Overwrite existing files</li>     
-      </ul>
-    </div>
-
-    <h3>
-<a id="people-saying" class="anchor" href="#people-saying" aria-hidden="true"><span class="octicon octicon-link"></span></a>Wonderful things people are saying about ExifImage</h3>
-
-    <div class="people-saying-content">
-      <div class="row quotes">
-        <div class="span3">
-          <blockquote>
-            <p>
-              ExifImage is stunning. Simple. Clean. Perfect. Well done,
-              <a href=""></a>
-            </p>
-            <small><a>Leopold</a>
-							<br>
-							Technology Evangelist</small>
-          </blockquote>
+    <section class="top-bar">
+    </section>
+    
+    <section class="page-header">
+        <img src="images/ico/logo_72.png"/>
+        <h1 class="project-name"></h1>
+        <h2 class="project-tagline"></h2>
+        <div class="platform-tags">
         </div>
-        <div class="span3">
-          <blockquote>
-            <p>
-              ExifImage is what I do pretty much all of my working. It's a great little app.
-              <a href=""></a>
-            </p>
-            <small><a>Jesse</a>
-							<br>
-							PHP Framework Designer</small>
-          </blockquote>
+        <a href="./versions.html" class="btn btn-download-link"></a>
+        <a href="./buy.html" class="btn btn-buy-link"></a>
+        <a href="//www.romanysoft.com" target="_blank" class="btn btn-learnmore-link"></a>
+    </section>
+
+    <section class="main-content">
+        <div class="app-screens">
         </div>
-        <div class="span3">
-          <blockquote>
-            <p>
-              If you have any interest in barcode, ExifImage is definitely worth a download.
-              <a href=""></a>
-            </p>
-            <small><a>Glen</a>
-							<br>
-							Web Developer and Designer</small>
-          </blockquote>
+        <div class="section-features">
         </div>
-        <div class="span3">
-          <blockquote>
-            <p>
-              I really like ExifImage, has brought much convenience for my work.
-              <a href=""></a>
-            </p>
-            <small><a>Caspar</a>
-							<br>
-							JAVA Framework Developer</small>
-          </blockquote>
+        <div class="section-reviews">
+        </div>
+        <h3></h3>
+        <footer class="site-footer">
+        </footer>
+
+    </section>
+        
+    <!-- TopBar template -->
+     <script id="topbar-content-tmpl" type="text/html">
+          <div class="wrapper no-pad">
+               <ul class="navigation">
+                 {{each list as navigation}}
+                     <li><a href="{{#navigation.url}}" target="{{#navigation.target}}">{{navigation.name}}</a></li>
+                 {{/each}}
+              </ul>
+         </div>
+    </script>
+    
+    <!-- Platform template -->
+    <script id="platform-content-tmpl" type="text/html">
+        <p>
+            {{each list as imgUrl}}
+            <a href="./versions.html">
+                <img src="images/platform/{{imgUrl}}.png" style="width:64px">
+            </a>
+            {{/each}}
+        </p>
+    </script>
+    
+    <!-- Scrrens template -->
+    <script id="screen-content-tmpl" type="text/html">
+        <div class="wrapper">
+            <ul id="sb-slider" class="sb-slider">
+                {{each list as imgUrl}}
+                <li>
+                    <img src="{{imgUrl}}">
+                </li>
+                {{/each}}
+            </ul>
+            <div id="shadow" class="shadow"></div>
         </div>
 
-      </div>
-    </div>
+    </script>
+    
+    <!--- Features template --->
+    <script id="features-content-tmpl" type="text/html">
+        <h3><a id="app-features" class="anchor" href="" aria-hidden="true"><span class="octicon octicon-link"></span></a>{{SectionName}}</h3>
+        <div>
+            <ul class="features-list">
+                {{each list as oneFeature}}
+                <li>
+                    <strong>{{oneFeature}}</strong>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </script>
+    
+    <!-- Reviews template--->
+    <script id="review-content-tmpl" type="text/html">
+        <h3><a id="app-features" class="anchor" href="" aria-hidden="true"><span class="octicon octicon-link"></span></a>{{SectionName}}</h3>
+        <div class="people-saying-content">
+            <div class="row quotes">
+                {{each list as review}}
+                <div class="span3">
+                    <blockquote>
+                        <p>
+                            {{review.reviewContent}}
+                            <a href=""></a>
+                        </p>
+                        <small><a>{{review.userName}}</a>
+							<br>
+							{{review.professional}}
+                        </small>
+                    </blockquote>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </script>
 
-
-
-    <h3>
-</h3>
-
-    <footer class="site-footer">
-      <span class="site-footer-owner"><a href="https://github.com/Romanysoft/ExifImage">ExifImage</a> is developed by <a href="https://github.com/Romanysoft">Romanysoft LAB.</a></span>
-      <span class="site-footer-credits">Copyright © 2015 Romanysoft LAB.</span>
-    </footer>
-
-  </section>
-  <script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-  </script>
-  <script type="text/javascript">
-    try {
-      var pageTracker = _gat._getTracker("UA-43238484-5");
-      pageTracker._trackPageview();
-    } catch (err) {}
-  </script>
-
+    <script src="js/l10n.js"></script>
+    <script src="js/views/top-bar.js"></script>
+    <script src="js/views/footer.js"></script>
+    <script src="js/views/view-index-page.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
